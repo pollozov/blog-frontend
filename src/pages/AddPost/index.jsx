@@ -32,20 +32,20 @@ export const AddPost = () => {
   return (
     <Paper style={{ padding: 30 }}>
       <Button variant="outlined" size="large">
-        Загрузить превью
+        Loading preview
       </Button>
       <br />
       <br />
       <TextField
         classes={{ root: styles.title }}
         variant="standard"
-        placeholder="Заголовок статьи..."
+        placeholder="Title..."
         fullWidth
       />
       <TextField
         classes={{ root: styles.tags }}
         variant="standard"
-        placeholder="Тэги"
+        placeholder="Tags"
         fullWidth
       />
       <SimpleMDE
@@ -56,9 +56,9 @@ export const AddPost = () => {
       />
       <div className={styles.buttons}>
         <Button size="large" variant="contained">
-          Опубликовать
+          Publish
         </Button>
-        <Button size="large">Отмена</Button>
+        <Button size="large">Cancel</Button>
       </div>
     </Paper>
   );
